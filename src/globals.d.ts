@@ -1,3 +1,5 @@
+import { InputHTMLAttributes } from "react";
+
 export interface Player {
 	firstname: string;
 	lastname: string;
@@ -6,3 +8,12 @@ export interface Player {
 	devise: string;
 	pictureURl: string;
 }
+
+export interface PlayerProps {
+    players: Player[]
+}
+
+
+
+
+export interface SearchProps extends InputHTMLAttributes<HTMLInputElement> {}; 
